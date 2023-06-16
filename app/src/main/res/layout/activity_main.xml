@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="#FFC107"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="46sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:textColorHint="#000000"
+            android:id="@+id/editName"
+            android:layout_height="wrap_content"
+            android:hint="ENTER NAME" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="400dp"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/editEmail"
+                android:layout_height="wrap_content"
+                android:hint="EMAIL" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/editPassword"
+                android:layout_height="wrap_content"
+                android:hint="PASSWORD" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/editId"
+                    android:layout_height="wrap_content"
+                    android:hint="UNIQUE ID" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+
+        android:id="@+id/signUp"
+        android:layout_gravity="center"
+        android:text="SIGN UP"
+        android:layout_marginTop="40dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
